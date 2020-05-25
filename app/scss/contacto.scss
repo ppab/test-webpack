@@ -1,0 +1,87 @@
+@import 'variables';
+
+section.three{
+    background: $p-green;
+}
+
+.contacto{
+    .row{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        padding-top:10rem;
+        padding-bottom:4rem;
+        height: auto;
+    }
+    [class*='col']{
+        flex-basis: 90vw;
+      
+    }
+    .col-1{
+     
+      
+    h4{
+        font-size: 66px;
+        font-weight: 300;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    form, h4,p{
+        color:white;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-left:auto ;
+        input{
+            padding-top: 2rem;
+            margin-top: 2rem; 
+            border-radius: 6px;
+        }
+
+    }
+
+}
+
+    .logo-cerebro{
+        max-width: 90vw;
+        width: 100%;
+        margin:auto ;
+        display: none;
+    }
+}
+
+
+.redes-sociales{
+    padding-top: 4rem;
+    text-align: center;
+
+}
+
+
+@media (min-width: 700px) {
+
+
+.contacto{
+    .row{
+
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        padding-top:10rem;
+        padding-bottom:10rem;
+        height: auto;
+    }
+    [class*='col']{
+        flex-basis: 670px;
+      
+    }
+
+    .logo-cerebro{
+       display: block;
+    }
+
+}
+
+}

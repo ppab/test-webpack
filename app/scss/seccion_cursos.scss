@@ -1,0 +1,253 @@
+@import "variables";
+
+
+section.two{
+  background: $gray;
+}
+/*separar a file*/
+.cursos {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+
+}
+.cursos-title {
+  flex-basis: 100%;
+  justify-content: center;
+  h2 {
+    font-size: 66px;
+    font-weight: 300;
+  }
+}
+
+.cursos-row {
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.cursosCard {
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: $shadow1;
+  flex-basis: 90vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+
+  overflow: hidden;
+  background-color: white;
+
+  .cursosCard-image {
+    background-color: white;
+    /*height: 20vh;*/
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  .cursosCard-title {
+    h4 {
+      font-size: 32px;
+      font-weight: 800;
+      margin: 1rem 0;
+    }
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .cursosCard-text {
+    p {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.71);
+      width: 80%;
+      margin: auto;
+
+    }
+
+  }
+
+  .comment-slider {
+    .commentCard {
+      font-size: 16px;
+      box-shadow: $shadow1;
+      width: 258px;
+
+      border-radius: 8px;
+
+      margin: 1rem;
+      padding: 1rem 0rem;
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .cursosCard-button {
+    button {
+      background-color: $red;
+      color: white;
+      border: 0px;
+      font-weight: 800;
+      font-size: 20px;
+      box-shadow: $shadow2;
+    }
+  }
+
+  .commentCard-stars {
+    display: flex;
+    justify-content: center;
+    .stars-wrapper {
+      width: 19.4px;
+      height: 18.3px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 340px) {
+  .cursosCard {
+    .comment-slider {
+      .commentCard {
+        margin: 2rem ;
+        padding: 0.5rem 0.4rem;
+      }
+     
+    }
+  }
+}
+@media (min-width: 411px) {
+  .cursosCard {
+    .comment-slider {
+      .commentCard {
+        margin: 2rem;
+        padding: 0.5rem 1.8rem;
+      }
+     
+    }
+  }
+}
+@media (min-width: 414px) {
+  .cursosCard {
+    .comment-slider {
+      .commentCard {
+        margin: 2rem;
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 470px) {
+  .cursosCard {
+    .comment-slider {
+      .commentCard {
+        margin: 2rem 4rem;
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 540px) {
+  .cursosCard {
+    .comment-slider {
+      .commentCard {
+        margin: 2rem 9rem;
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 700px) {
+  .cursosCard {
+    h4 {
+      font-size: 35px;
+    }
+    .cursosCard-text {
+      p{
+
+        font-size: 22px;
+      }
+    }
+    .comment-slider {
+      .commentCard {
+        
+        margin: 2rem;
+        padding: 1rem 0.5rem;
+        p {
+          font-size: 15px;
+        }
+      }
+      
+    }
+
+    .cursosCard-button {
+      button {
+        font-size: 27px;
+      }
+    }
+  }
+
+  .cursos-row {
+    margin: auto;
+    flex-basis: 80%;
+    padding: 2rem;
+  }
+  .cursosCard {
+    flex-basis: 670px;
+
+    height: 788px;
+  }
+
+  .cursosCard-image {
+    height: 290px;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .cursosCard {
+    .comment-slider {
+      .commentCard {
+        margin: 2rem 1rem;
+        padding: 0.5rem 0.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  .cursosCard {
+    .comment-slider {
+      .commentCard {
+        margin: 2rem  ;
+        padding: 0.5rem .9rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.owl-nav {
+  display: none;
+}
+
