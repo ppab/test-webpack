@@ -1,13 +1,100 @@
-@import 'variables';
-section.one{
-    margin-top: 7rem;
-    background: $p-green;
+@import "variables";
+section.one {
+  padding-top: 12rem;
+  background: $p-green;
+  color: white;
 
+  .info [class*="col"] {
+    flex-basis: 100%;
+  }
+  .row {
+    height: auto;
+  }
 
-p{
-    font-size: 34px;
+  .logo-cerebro {
+    width: 57%;
+    margin-left: auto;
+  }
+
+  .info {
+    padding: 2rem;
+  }
+  h2 {
+    text-shadow: 2px 2px 5px rgba(63, 68, 68, 0.3);
+
+    font-family: "Raleway", sans-serif;
+   
+  }
+  p {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  @media (min-width: 700px) {
+
+    .info [class*="col"] {
+      flex-basis: 40%;
+      padding: 5%;
+
+      h2 {
+        text-shadow: 2px 2px 5px rgba(63, 68, 68, 0.3);
+    
+        font-family: "Raleway", sans-serif;
+        font-size: 29px;
+      }
+      p {
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+      }
+
+    }
+    .row {
+      align-items: center;
+    }
+
+    .logo-cerebro {
+      width: 100%;
+      margin: auto;
+    }
+    .col-1 {
+      order: 2;
+      margin-top: -4rem;
+    }
+
+    .col-2 {
+      order: 1;
+      padding-top: 3rem;
+      padding-left: 6%;
+      flex-basis: 60%;
+    }
+  }
 }
 
 
+@media (min-width: 920px) {
+   
+    section.one { 
+    .col-1 {
+   
+      margin-top: -16rem;
+    }
 
+    .col-2 {
+padding: 2%;
+    }
+
+
+
+    .info [class*="col"] {
+      
+        h2 {
+      
+          font-size: 32px;
+        }
+        p {
+          font-size: 20px;
+       
+        }
+}}
 }
+

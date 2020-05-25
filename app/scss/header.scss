@@ -1,5 +1,6 @@
 @import "variables";
 .header-row {
+
   width: 100vw;
   background-color: $p-green;
   position: fixed;
@@ -91,13 +92,8 @@
 @media (min-width: 700px) {
   .header-row {
     .row {
-   padding: 1rem;
-   grid-template-rows: 1fr;
-   .col-2 {
-   
-    grid-row: 1/2;
-  }
-
+    
+      
       .Logo {
         width: 585px;
         padding-left: 5%;
@@ -106,19 +102,24 @@
         width: 200px;
         img {
           right: 0;
-          top: 0;
+          top: -10px;
+          filter: opacity(.7);
+          transform: scale(.8);
         }
       }
 
       .login-div span {
-        left: -1px;
-        font-size: 1.4rem;
+        left: -6px;
+    top: -15px;
+    font-size: 1rem;
+  
+    
       }
 
       svg#loginsvg {
-        transform: scaleX(0.6) scaleY(0.55);
+        transform: scaleX(0.4) scaleY(0.35);
         right: 185px;
-        top: -105px;
+        top: -112px;
       }
 
       .main-menu {
@@ -135,3 +136,22 @@
     }
   }
 }
+
+@media (min-width: 1098px) {
+  .header-row {
+  .row{
+padding: 1rem;
+grid-template-columns: 1fr 577px 1fr;
+grid-template-rows: 1fr;
+.col-2 {
+ grid-row: 1/2;
+ grid-column: 2/3;
+}
+.col-3 {
+  grid-column: 3/3;
+ }
+
+
+}
+
+}}
