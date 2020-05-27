@@ -1,14 +1,40 @@
 @import "variables";
 section.one {
-  padding-top: 12rem;
-  background: $p-green;
-  color: white;
+  position: relative;
+  z-index: 3;
+  button{
+     background-color: lighten($p-orange2, 3%);
+    border: 2px solid lighten($p-orange2, 2%);
+    color: #fff;
+    border-radius: 0px;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  button:hover{
+  
+    background-color: $p-orange2 ;
+  }
+  
+    overflow: hidden;
+  padding-top: 2rem;
+  background-color: $p-green;
+
+color: white;
+
+  // #flor-1 {
+  //   position: absolute;
+  //   top: -18%;
+  //   right: 77%;
+  //   z-index: 0;
+  //   filter: opacity(0.7);
+  //   transform: scale(1.5);
+  // }
 
   .info [class*="col"] {
     flex-basis: 100%;
   }
   .row {
-    height: auto;
+    height: auto;  position: relative;
   }
 
   .logo-cerebro {
@@ -17,38 +43,40 @@ section.one {
   }
 
   .info {
+    margin-top: -3rem;
     padding: 2rem;
   }
   h2 {
     text-shadow: 2px 2px 5px rgba(63, 68, 68, 0.3);
-
+    font-size: 28px;
     font-family: "Raleway", sans-serif;
-   
+    font-weight: 100;
   }
   p {
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
+
   }
 
   @media (min-width: 700px) {
 
+    
     .info [class*="col"] {
       flex-basis: 40%;
       padding: 5%;
 
       h2 {
         text-shadow: 2px 2px 5px rgba(63, 68, 68, 0.3);
-    
+
         font-family: "Raleway", sans-serif;
         font-size: 29px;
       }
       p {
         font-size: 16px;
-        font-family: "Open Sans", sans-serif;
+       
       }
-
     }
     .row {
+      padding-top: 4rem;
       align-items: center;
     }
 
@@ -70,31 +98,29 @@ section.one {
   }
 }
 
-
 @media (min-width: 920px) {
+  section.one {
    
-    section.one { 
+  
     .col-1 {
-   
       margin-top: -16rem;
     }
 
     .col-2 {
-padding: 2%;
+      padding: 2%;
+      #Logo_cerebro {
+        position: relative;
+        top: -3rem;
+      }
     }
 
-
-
     .info [class*="col"] {
-      
-        h2 {
-      
-          font-size: 32px;
-        }
-        p {
-          font-size: 20px;
-       
-        }
-}}
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
 }
-

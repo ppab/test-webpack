@@ -8,6 +8,8 @@ import '../scss/seccion_cursos.scss';
 import '../scss/contacto.scss';
 import '../scss/intro-text.scss';
 import '../scss/header.scss';
+import '../scss/flor1.scss';
+import '../scss/seccion_alma.scss';
 
  import 'owl.carousel/dist/assets/owl.carousel.css';
  import 'owl.carousel';

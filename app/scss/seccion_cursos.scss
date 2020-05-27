@@ -3,12 +3,15 @@
 
 section.two{
   background: $gray;
+
 }
 /*separar a file*/
 .cursos {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
   text-align: center;
+  
 
 }
 .cursos-title {
@@ -27,7 +30,12 @@ section.two{
   justify-content: space-around;
   overflow: hidden;
 }
-
+.cursos-row>div:first-child{
+  order:2;
+}
+.cursos-row>div:nth-child(1){
+  filter: grayscale(.8);
+}
 .cursosCard {
   overflow: hidden;
   border-radius: 12px;
@@ -93,7 +101,7 @@ section.two{
 
   .cursosCard-button {
     button {
-      background-color: $red;
+      background-color: $p-orange2;
       color: white;
       border: 0px;
       font-weight: 800;
@@ -109,7 +117,7 @@ section.two{
       width: 19.4px;
       height: 18.3px;
       img {
-        width: 100%;
+        width: 60%;
       }
     }
   }
@@ -205,6 +213,7 @@ section.two{
     margin: auto;
     flex-basis: 80%;
     padding: 2rem;
+  
   }
   .cursosCard {
     flex-basis: 670px;
@@ -232,6 +241,7 @@ section.two{
 
 @media (min-width: 1023px) {
   .cursosCard {
+    transform: scale(.9);
     .comment-slider {
       .commentCard {
         margin: 2rem  ;

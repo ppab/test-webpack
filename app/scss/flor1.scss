@@ -1,0 +1,71 @@
+
+section.one {
+  #flor-1 { 
+    position: fixed;
+    top: -22%;
+    left: 38%;
+    filter: opacity(0.6);
+    transform: scale(.8);
+  }
+ 
+    .flor-div {
+   
+      width: 50vw;
+      position: fixed;
+      width: 50vw;
+      top: -10%;
+      left:162px;
+    }
+}
+@media (min-width: 410px) {
+section.one {
+  #flor-1 {
+    top: -22%;
+ 
+  }
+}}
+@media (min-width: 450px) {
+section.one {
+  #flor-1 {
+    top: -30%;
+ 
+  }
+}}
+@media (min-width:550px) {
+section.one {
+  #flor-1 {
+    top: -45%;
+ 
+  }
+}}
+@media (min-width: 900px) {
+    section.one {
+      .flor-div {
+          // position: absolute;
+        // width: 50vw;
+        // top: -28%;
+        // left: 66%;
+      }
+      #flor-1 {
+        // position: absolute;
+        top: -70%;
+        right: 0;
+        filter: opacity(0.6);
+      }
+    }
+  }
+  
+@media (min-width: 1200px) {
+    section.one {
+      .flor-div {
+    
+      }
+      #flor-1 {
+      
+        top: -76%;
+        right: 0;
+        filter: opacity(0.6);
+      }
+    }
+  }
+  
