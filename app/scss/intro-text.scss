@@ -1,7 +1,6 @@
 @import "variables";
 section.one {
-  position: relative;
-  z-index: 3;
+
   button{
      background-color: lighten($p-orange2, 3%);
     border: 2px solid lighten($p-orange2, 2%);
