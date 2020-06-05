@@ -6,6 +6,7 @@ section.three{
 }
 
 .contacto{
+    padding: 5%;
     .row{
         width: 90%;
         margin: auto;
@@ -36,9 +37,18 @@ section.three{
         flex-flow: column nowrap;
         margin-left:auto ;
         input{
-            padding-top: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             margin-top: 2rem; 
-            border-radius: 6px;
+            border-radius: 6px;  border: none;
+
+
+          
+        }
+        input[type="submit"]{
+            background-color:$p-yellow2;
+            color:white;
+          
         }
 
     }

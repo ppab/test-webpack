@@ -11,6 +11,7 @@ section.two{
   display: flex;
   flex-flow: row wrap;
   text-align: center;
+ 
   
 
 }
@@ -18,7 +19,7 @@ section.two{
   flex-basis: 100%;
   justify-content: center;
   h2 {
-    font-size: 66px;
+    font-size: 36px;
     font-weight: 300;
   }
 }
@@ -176,6 +177,14 @@ section.two{
       }
     }
   }
+
+  .cursos-title {
+    
+    h2 {
+      font-size:66px;
+      font-weight: 300;
+    }
+  }
 }
 
 
@@ -237,6 +246,8 @@ section.two{
       }
     }
   }
+
+ 
 }
 
 @media (min-width: 1023px) {

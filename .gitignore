@@ -1,1 +1,13 @@
-node_modules
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*.~
+*.sass-cache
+node_modules/
+docs/
+.tmp/

@@ -1,7 +1,7 @@
 @import "variables";
 .header-row {
 
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
   background-color: $p-green;
   // position: fixed;
