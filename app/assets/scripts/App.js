@@ -13,11 +13,12 @@ import '../scss/seccion_alma.scss';
 
  import 'owl.carousel/dist/assets/owl.carousel.css';
  import 'owl.carousel';
+ import {f1} from './navbar'
 
 if (module.hot){
     module.hot.accept();
 }
-// f1();
+
 
 $(document).ready(function(){
     var owl = $('.owl-carousel');
@@ -46,3 +47,6 @@ $(document).ready(function(){
 
    
   });
+
+
+  f1();

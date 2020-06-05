@@ -6,6 +6,7 @@ section.one {
     left: 38%;
     filter: opacity(0.6);
     transform: scale(.8);
+    transition: top 1s;
   }
  
     .flor-div {
@@ -34,25 +35,31 @@ section.one {
 @media (min-width:550px) {
 section.one {
   #flor-1 {
-    top: -45%;
+    top: -25%;
  
   }
 }}
-@media (min-width: 900px) {
-    section.one {
-      .flor-div {
-          // position: absolute;
-        // width: 50vw;
-        // top: -28%;
-        // left: 66%;
-      }
-      #flor-1 {
-        // position: absolute;
-        top: -70%;
-        right: 0;
-        filter: opacity(0.6);
-      }
+
+
+@media (min-width:600px) {
+  section.one {
+    #flor-1 {
+      top: -29%;
+   
     }
+  }}
+@media (min-width: 900px) {
+  section.one {
+    .flor-div {
+  
+    }
+    #flor-1 {
+    
+      top: -70%;
+      right: 0;
+      filter: opacity(0.6);
+    }
+  }
   }
   
 @media (min-width: 1200px) {
