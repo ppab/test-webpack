@@ -15,6 +15,15 @@ import '../scss/seccion_alma.scss';
  import 'owl.carousel';
  import {f1} from './navbar'
 
+ //React Related Code Goes Here
+ import React from 'react';
+ import ReactDOM from 'react-dom';
+import Component1 from'./Component1';
+
+
+ ReactDOM.render(<Component1/>,document.querySelector("#react"));
+
+
 if (module.hot){
     module.hot.accept();
 }

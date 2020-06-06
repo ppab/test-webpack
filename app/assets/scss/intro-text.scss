@@ -1,6 +1,7 @@
 @import "variables";
 section.one {
 
+
   button{
      background-color: lighten($p-orange2, 3%);
     border: 2px solid lighten($p-orange2, 2%);
@@ -31,9 +32,21 @@ color: white;
 
   .info [class*="col"] {
     flex-basis: 100%;
+   
+  }
+  .info [class*="col-1"] {
+   
+     
+     
+    
+   
+  }
+
+  .info [class*="col-2"] {
+
   }
   .row {
-    height: auto;  position: relative;
+    height: 100vh;  position: relative;
   }
 
   .logo-cerebro {
@@ -75,6 +88,7 @@ color: white;
       }
     }
     .row {
+      height: auto;
       padding-top: 4rem;
       align-items: center;
     }
@@ -86,6 +100,7 @@ color: white;
     .col-1 {
       order: 2;
       margin-top: -4rem;
+      
     }
 
     .col-2 {

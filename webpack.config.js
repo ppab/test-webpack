@@ -1,6 +1,5 @@
 const currentTask = process.env.npm_lifecycle_event
 const path = require('path')
-
 const webpack = require('webpack');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -62,12 +61,23 @@ let jquery = new webpack.ProvidePlugin({
   "window.jQuery": "jquery",
 });
 
+let babelConfig={
+  test: /\.js$/,
+  exclude: /(node_modules)/,
+  use: {
+    loader: 'babel-loader',
+    options: {
+      presets: ['@babel/preset-react','@babel/preset-env']
+    }
+  }
+};
+
 let config = {
   entry: './app/assets/scripts/App.js',
   plugins: pages,
   module: {
     rules: [
-      cssConfig,sassConfig
+      cssConfig,sassConfig,babelConfig
     ]
   }
 }
@@ -92,16 +102,6 @@ if (currentTask == 'dev') {
 }
 
 if (currentTask == 'build') {
-  config.module.rules.push({
-    test: /\.js$/,
-    exclude: /(node_modules)/,
-    use: {
-      loader: 'babel-loader',
-      options: {
-        presets: ['@babel/preset-env']
-      }
-    }
-  })
 
   cssConfig.use.unshift(MiniCssExtractPlugin.loader)
   postCSSPlugins.push(require('cssnano'))
